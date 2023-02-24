@@ -25,11 +25,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Hello-Microverse] <a name="about-project"></a>
+# 📖 portfolio mobile first] <a name="about-project"></a>
 
 Add text the "Hello Microverse" in my this project.
 
-**[Hello-Microverse]** is a project of Microverse.
+**[portfolio]** is a project of Microverse.
 
 ## 🛠 Built With <a name="built-with"></a>
  
@@ -75,7 +75,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-github clone: git@github.com:samreenmj/Hello-Microverse.git
+github clone: git@github.com:samreenmj/Portfolio-mobile--first.git
 
 ### Install
 
@@ -113,8 +113,8 @@ You can deploy this project using:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[Add "Hello Microverse"]**
-- [ ] **[Add Linters]**
+- [ ] **[Add "search bar"]**
+- [ ] **[Add contact section]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
