@@ -377,10 +377,12 @@ span {
   color: #6070ff;
   font-family: sans-serif, 'poppins';
 }
-.project-skills flex{
+
+.project-skills-flex {
   float: right;
 }
-.contact-form{
+
+.contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -388,64 +390,71 @@ span {
   width: 375px;
   height: 779px;
   border-top-left-radius: 58px;
-  background: #6070FF;
+  background: #6070ff;
   background-image: url(images/cntctimg.png);
   background-position: right;
   background-repeat: no-repeat;
 }
+
 .contactme {
-font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 52px;
-color: #fff;
-padding: 25px;
-gap: 50px;
+  font-family: sans-serif, 'poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  padding: 25px;
+  gap: 50px;
 }
+
 .c-text {
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-color: #EBEBFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
 }
+
 .name-label {
-Width:327px;
-Height:48px;
-background: #FFFFFF;
-border: 1px solid #CFD8DC;
-border-radius: 8px;
-margin: 10px;
-}
-.email-label {
-  Width:327px;
-  Height:48px;
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+  width: 327px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin: 10px;
 }
+
+.email-label {
+  width: 327px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin: 10px;
+}
+
 #name-label,
 #email-label,
 #message-label {
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 17px;
-color: #172B4D;
+  font-family: sans-serif, 'poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #172b4d;
 }
+
 .message-label {
-  background: #FFFFFF;
-border: 1px solid #CFD8DC;
-border-radius: 8px;
-Width:327px;
-Height:170px;
-margin: 10px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 327px;
+  height: 170px;
+  margin: 10px;
 }
+
 .gtn-button {
-  background: #FFFFFF;
+  background: #fff;
   margin: -10px 0 0 -210px;
 }
