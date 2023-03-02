@@ -444,8 +444,14 @@ border-radius: 8px;
 Width:327px;
 Height:170px;
 margin: 10px;
+
 }
 .gtn-button {
   background: #FFFFFF;
-  margin: -10px 0 0 -210px;
+  margin: 10px 0 0 10px;
+  
+}
+input::placeholder {
+  margin: 50px;
+
 }
