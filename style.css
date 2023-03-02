@@ -446,20 +446,15 @@ span {
 }
 
 .message-label {
-  background: #FFFFFF;
-border: 1px solid #CFD8DC;
-border-radius: 8px;
-Width:327px;
-Height:170px;
-margin: 10px;
-
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 327px;
+  height: 170px;
+  margin: 10px;
 }
 
 .gtn-button {
-  background: #FFFFFF;
+  background: #fff;
   margin: 10px 0 0 10px;
-  
 }
-
-
-
