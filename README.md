@@ -25,11 +25,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 portfolio mobile first] <a name="about-project"></a>
+# 📖 portfolio mobile first <a name="about-project"></a>
 
-Add text the "Hello Microverse" in my this project.
-
-**[portfolio]** is a project of Microverse.
+**Portfolio** is my porfolio website as a beginner Software Developer. Though it is a work-in-progress, it is built with preference for responsiveness and good use of semantic tags. This repo features my learning speed and ability as I scale my leanrning with Microverse. 
 
 ## 🛠 Built With <a name="built-with"></a>
  
@@ -41,27 +39,19 @@ Add text the "Hello Microverse" in my this project.
 
 ### Key Features <a name="key-features"></a>
 
-- **[project section]**
-- **[About me section]**
-- **[contact form secton]**
+- **Responsive Design**
+- **Aesthetic design**
+- **Smooth animation for user experience**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -78,6 +68,11 @@ github clone: git@github.com:samreenmj/Portfolio-mobile--first.git
 ### Install
 
 Install this project with:
+```
+cd Portfolio-mobile
+code .
+# Then open it using liveserver from your text editor extension
+```
 
 ### Usage
 
@@ -97,7 +92,7 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Samreen**
 
 - GitHub: [@githubhandle](https://github.com/samreenmj)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
@@ -109,11 +104,9 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[Add "search bar"]**
-- [ ] **[Add contact section]**
-
+- [ ] **Add "search bar"**
+- [ ] **Add contact section**
+- [ ] **Add dynamism with JavaScript**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,6 +140,6 @@ I would like to thank Microverse.
 
 ## 📝 License <a name="license"></a>
 
-[MIT Licence](LICENSE.md)
+[MIT Licence](./LICENSE.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
