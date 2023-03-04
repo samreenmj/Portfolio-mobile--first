@@ -112,11 +112,11 @@ You can deploy this project using:
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing <a name="contributing"></a>
+## 🤝 Contributing < Melembi ="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [branch-link](https://github.com/samreenmj/Portfolio-mobile--first/pull/2).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
