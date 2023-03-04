@@ -184,7 +184,14 @@ a {
   line-height: 20px;
   color: #051eff;
   transition: transform 0.2s ease-in-out;
+  animation: logo 2s ease-in-out 0s  normal none;
 }
+
+@keyframes logo {
+  from { margin-left: 20px; }
+  to { margin-left: 250px; }
+}
+
 
 .nav-logo:hover {
   transform: rotate(91deg);
