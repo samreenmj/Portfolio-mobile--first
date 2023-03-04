@@ -852,4 +852,8 @@ body {
     color: #b3bac5;
     border: 1px solid #cfd8dc;
   }
+
+  .social-icon{
+    gap: 12px;
+  }
 }
