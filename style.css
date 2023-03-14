@@ -3,11 +3,15 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   background-color: #f7f7f9;
   margin: 0;
   padding: 0;
+}
+
+label {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -24,7 +28,7 @@ body {
   }
 
   header a {
-    color: #6070ff;
+    color: #0f27ff;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
@@ -86,7 +90,7 @@ body {
   }
 
   .icon {
-    color: #6070ff;
+    color: #0f27ff;
   }
 
   li {
@@ -112,7 +116,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #7f8cff;
+    color: #0a23ff;
     width: 100%;
     margin-top: 0;
     margin-bottom: 0;
@@ -148,10 +152,16 @@ body {
     background-color: #fff;
   }
 
+  .card,
+  .card_reverse {
+    transition: transform 0.2s;
+  }
+
   .card:hover,
   .card_reverse:hover {
     border: 2px solid #a7aeff;
     box-shadow: 0 35px 20px -15px #e7e9f0;
+    transform: scale(1.1);
   }
 
   .second_reverse {
@@ -228,7 +238,7 @@ body {
     font-size: 18px;
     width: auto;
     font-weight: 400;
-    color: #7a869a;
+    color: #4f5869;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -276,7 +286,7 @@ body {
   }
 
   .tech_list li {
-    color: #6070ff;
+    color: #0f27ff;
     background-color: #ebebff;
     border-radius: 8px;
     padding: 4px 12px;
@@ -289,7 +299,7 @@ body {
     color: #396df2;
     margin-top: 3%;
     align-self: self-start;
-    border: 1px solid #6070ff;
+    border: 1px solid #0f27ff;
     padding: 12px;
     border-radius: 8px;
     background-color: white;
@@ -299,7 +309,7 @@ body {
 
   .btn_details:hover {
     color: #fff;
-    background-color: #6070ff;
+    background-color: #0f27ff;
   }
 
   .btn_details:active {
@@ -399,11 +409,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("images\contactformshapes-mobile@2x.png");
+    background-image: url("./images/contactformBackgroundshapes@2x.png");
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
-    background-color: #6070ff;
+    background-color: #0f27ff;
     border-top-left-radius: 80px;
     color: #ebebff;
     padding-top: 6%;
@@ -411,7 +421,7 @@ body {
   }
 
   .form_section h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 40px;
     font-weight: 700;
     width: 30%;
@@ -420,7 +430,7 @@ body {
   }
 
   .form_section p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 20px;
     font-weight: 400;
@@ -503,17 +513,105 @@ body {
   }
 
   header a {
-    color: #6070ff;
+    color: #0f27ff;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
     text-decoration: none;
   }
 
+  .middle_bar {
+    position: absolute;
+    height: 5px;
+    background-color: black;
+    width: 40%;
+    border: none;
+    top: 95vh;
+    margin-right: 5%;
+  }
+
+  .bottom_bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .open {
+    color: #0f27ff;
+    font-size: 25px;
+  }
+
+  .close {
+    display: none;
+    color: white;
+    font-size: 20px;
+  }
+
+  .hamburger {
+    color: transparent;
+    padding: 0;
+    width: auto;
+    z-index: 100;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    margin-right: 10px;
+  }
+
+  .closingIcon {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    margin-top: 5%;
+  }
+
+  .link_item {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: white;
+  }
+
+  .menu_list {
+    box-sizing: border-box;
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgba(57, 86, 193, 0.863);
+    backdrop-filter: blur(5px);
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+    margin-top: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .menu_list li {
+    margin-bottom: 5%;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
+
   .containt {
     display: flex;
     flex-wrap: wrap;
-    background-image: url("./images/Headerbg@2x.png");
+    background-image: url("./images/header-shapesmobile.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -527,15 +625,15 @@ body {
     padding-right: 15px;
   }
 
+  .hide_y_scroll {
+    overflow-y: hidden;
+  }
+
   .icon {
-    color: #6070ff;
+    color: #0f27ff;
   }
 
-  li {
-    list-style: none;
-  }
-
-  ul {
+  .medias {
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -560,7 +658,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #7f8cff;
+    color: #0a23ff;
     width: 100%;
   }
 
@@ -638,7 +736,7 @@ body {
   .title_list li {
     font-size: 13px;
     font-weight: 600;
-    color: #7a869a;
+    color: #4f5869;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -660,8 +758,18 @@ body {
     width: 100%;
   }
 
+  @media only screen and (max-width: 500px) {
+    .tech_list li {
+      margin: 0;
+    }
+
+    .tech_list {
+      padding-left: 0;
+    }
+  }
+
   .tech_list li {
-    color: #6070ff;
+    color: #0f27ff;
     background-color: #ebebff;
     border-radius: 8px;
     padding: 4px 12px;
@@ -672,7 +780,7 @@ body {
   .btn_details {
     color: #396df2;
     align-self: self-start;
-    border: 1px solid #6070ff;
+    border: 1px solid #0f27ff;
     padding: 12px;
     border-radius: 8px;
     background-color: white;
@@ -682,7 +790,7 @@ body {
 
   .btn_details:hover {
     color: #fff;
-    background-color: #6070ff;
+    background-color: #0f27ff;
   }
 
   .btn_details:active {
@@ -779,11 +887,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("./images/contactformBackgroundshapes@2x.png");
+    background-image: url("./images/contactformshapes-mobile@2x.png");
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #6070ff;
+    background-color: #0f27ff;
     padding-top: 20%;
     padding-left: 24px;
     padding-right: 24px;
@@ -792,14 +900,14 @@ body {
   }
 
   .form_section h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
   }
 
   .form_section p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 20px;
     font-weight: 400;
@@ -851,9 +959,5 @@ body {
     text-align: left;
     color: #b3bac5;
     border: 1px solid #cfd8dc;
-  }
-
-  .social-icon {
-    gap: 12px;
   }
 }
