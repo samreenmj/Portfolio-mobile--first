@@ -13,7 +13,7 @@ const projects = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javaScript'],
-    image: './images\Snapshoot-Portfolio0.png',
+    image: './images/Snapshoot-Portfolio0.png',
     livelink: 'https://samreenmj.github.io/Portfolio-mobile--first/',
     sourcelink: 'https://github.com/samreenmj/Portfolio-mobile--first',
     classes: 'card',
@@ -26,7 +26,7 @@ const projects = [
     description:
       'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    image: 'images\SnapshootPortfolio4.png',
+    image: 'images/SnapshootPortfolio4.png',
     livelink: 'https://samreenmj.github.io/Portfolio-mobile--first/',
     sourcelink: 'https://github.com/samreenmj/Portfolio-mobile--first',
     classes: 'card_reverse',
@@ -39,7 +39,7 @@ const projects = [
     description:
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    image: './images\SnapshootPortfolio2.png',
+    image: './images/SnapshootPortfolio2.png',
     livelink: 'https://samreenmj.github.io/Portfolio-mobile--first/',
     sourcelink: 'https://github.com/samreenmj/Portfolio-mobile--first',
     classes: 'card',
@@ -52,7 +52,7 @@ const projects = [
     description:
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    image: './images\SnapshootPortfolio1.png',
+    image: './images/SnapshootPortfolio1.png',
     livelink: 'https://samreenmj.github.io/Portfolio-mobile--first/',
     sourcelink: 'https://github.com/samreenmj/Portfolio-mobile--first',
     classes: 'card_reverse',
@@ -134,8 +134,8 @@ function displayCard() {
                 </ul>
                 <hr class="divider">
                 <div class="btn_links">
-                  <button class="btn_details btn_modal"><a href="${project.livelink}" class="modal_link" target="_blank">See live</a><img class="" tabindex="0" src="./images\see_live_btn.png" srcset=""></button>
-                  <button class="btn_details btn_modal"><a href="${project.sourcelink}" class="modal_link" target="_blank">See Source</a><img class="" tabindex="0" src="./images\see_source_btn.png" srcset=""></button>
+                  <button class="btn_details btn_modal"><a href="${project.livelink}" class="modal_link" target="_blank">See live</a><img class="" tabindex="0" src="./images/see_live_btn.png" srcset=""></button>
+                  <button class="btn_details btn_modal"><a href="${project.sourcelink}" class="modal_link" target="_blank">See Source</a><img class="" tabindex="0" src="./images/see_source_btn.png" srcset=""></button>
                 </div>
             </div>
           </div>
