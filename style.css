@@ -478,7 +478,7 @@ label {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 20px;
     left: 0;
     top: 0;
     width: 100%;
@@ -486,6 +486,7 @@ label {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
   }
 
   .btn_links {
@@ -498,7 +499,7 @@ label {
   .modal-content {
     border-radius: 16px;
     background-color: #fefefe;
-    margin: auto;
+    margin: 20px auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
@@ -1087,7 +1088,7 @@ label {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 20px;
     left: 0;
     top: 0;
     width: 100%;
@@ -1095,6 +1096,7 @@ label {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
   }
 
   .btn_links {
@@ -1119,7 +1121,7 @@ label {
   .modal-content {
     border-radius: 16px;
     background-color: #fefefe;
-    margin: auto;
+    margin: 20px auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
