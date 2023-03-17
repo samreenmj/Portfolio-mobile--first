@@ -4,6 +4,9 @@ const hamburger = document.querySelector('.hamburger');
 const closeIcon = document.querySelector('.close');
 const menuIcon = document.querySelector('.open');
 const workSection = document.getElementById('work');
+const message = document.getElementById('validate_el');
+const mail = document.getElementById('email');
+const formSubmit = document.querySelector('.form_submit');
 let btnModal;
 let span;
 const projects = [
@@ -22,10 +25,10 @@ const projects = [
   },
   {
     name: 'Multi-PostStories',
-    skills: { campany: 'FACEBOOK', stack: 'Full Stack Dev', year: '2015' },
+    skills: { campany: 'FACEBOOK', stack: 'front lead', year: '2015' },
     description:
       'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    technologies: ['html', 'css', 'javaScript'],
     image: 'images/SnapshootPortfolio4.png',
     livelink: 'https://samreenmj.github.io/Portfolio-mobile--first/',
     sourcelink: 'https://github.com/samreenmj/Portfolio-mobile--first',
@@ -35,10 +38,10 @@ const projects = [
   },
   {
     name: 'Facebook 360',
-    skills: { campany: 'FACEBOOK', stack: 'Full Stack Dev', year: '2015' },
+    skills: { campany: 'FACEBOOK', stack: 'front lead', year: '2015' },
     description:
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    technologies: ['html','css', 'javaScript'],
     image: './images/SnapshootPortfolio2.png',
     livelink: 'https://samreenmj.github.io/Portfolio-mobile--first/',
     sourcelink: 'https://github.com/samreenmj/Portfolio-mobile--first',
@@ -51,7 +54,7 @@ const projects = [
     skills: { campany: 'Uber', stack: 'Lead Developer', year: '2018' },
     description:
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    technologies: ['html', 'css', 'javaScript'],
     image: './images/SnapshootPortfolio1.png',
     livelink: 'https://samreenmj.github.io/Portfolio-mobile--first/',
     sourcelink: 'https://github.com/samreenmj/Portfolio-mobile--first',
@@ -117,16 +120,9 @@ function displayCard() {
           <div class="details">
             <div class="leftSide">
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                standard
-                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the
                 releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with
-                the
-                releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of
-                type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem
-                Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                dummy
-                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+                standard dummy text ever since the 1500s. </p>
             </div>
             <div class="rightSide">
                 <ul class="tech_list_modal tech_list">
@@ -171,4 +167,10 @@ displayCard();
 hamburger.addEventListener('click', toggleMenu);
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', toggleMenu);
+});
+formSubmit.addEventListener('submit', (event) => {
+  if (/[A-Z]/.test(mail.value)) {
+    message.innerHTML = 'Your email address should be lowercase';
+    event.preventDefault();
+  }
 });
