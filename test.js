@@ -41,7 +41,7 @@ const projects = [
     skills: { campany: 'FACEBOOK', stack: 'front lead', year: '2015' },
     description:
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    technologies: ['html','css', 'javaScript'],
+    technologies: ['html', 'css', 'javaScript'],
     image: './images/SnapshootPortfolio2.png',
     livelink: 'https://samreenmj.github.io/Portfolio-mobile--first/',
     sourcelink: 'https://github.com/samreenmj/Portfolio-mobile--first',
