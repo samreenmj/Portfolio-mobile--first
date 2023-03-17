@@ -175,3 +175,23 @@ formSubmit.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+formSubmit.addEventListener('input', () => {
+  const formData = {
+    name: inputName.value,
+    email: inputEmail.value,
+    message: inputTextArea.value,
+  };
+
+  localStorage.setItem('contactForm', JSON.stringify(formData));
+});
+
+function loadData() {
+  const formObj = JSON.parse(localStorage.getItem('contactForm'));
+  if (formObj) {
+    inputName.value = formObj.name;
+    inputEmail.value = formObj.email;
+    inputTextArea.value = formObj.message;
+  }
+}
+displayCard();
+loadData();
