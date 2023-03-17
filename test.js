@@ -15,6 +15,7 @@ const projects = [
     skills: { campany: 'CANOPY', stack: 'Back End Dev', year: '2015' },
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    para: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of',
     technologies: ['html', 'css', 'javaScript'],
     image: './images/Snapshoot-Portfolio0.png',
     livelink: 'https://samreenmj.github.io/Portfolio-mobile--first/',
@@ -28,6 +29,7 @@ const projects = [
     skills: { campany: 'FACEBOOK', stack: 'front lead', year: '2015' },
     description:
       'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    para: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of',
     technologies: ['html', 'css', 'javaScript'],
     image: 'images/SnapshootPortfolio4.png',
     livelink: 'https://samreenmj.github.io/Portfolio-mobile--first/',
@@ -41,6 +43,7 @@ const projects = [
     skills: { campany: 'FACEBOOK', stack: 'front lead', year: '2015' },
     description:
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    para: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of',
     technologies: ['html', 'css', 'javaScript'],
     image: './images/SnapshootPortfolio2.png',
     livelink: 'https://samreenmj.github.io/Portfolio-mobile--first/',
@@ -54,6 +57,7 @@ const projects = [
     skills: { campany: 'Uber', stack: 'Lead Developer', year: '2018' },
     description:
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    para: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of',
     technologies: ['html', 'css', 'javaScript'],
     image: './images/SnapshootPortfolio1.png',
     livelink: 'https://samreenmj.github.io/Portfolio-mobile--first/',
@@ -119,8 +123,7 @@ function displayCard() {
           <img class="" tabindex="0" src="${project.image}" srcset="">
           <div class="details">
             <div class="leftSide">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown printer took a galley of</p>
+              <p>${project.para}</p>
             </div>
             <div class="rightSide">
                 <ul class="tech_list_modal tech_list">
