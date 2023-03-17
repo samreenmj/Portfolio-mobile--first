@@ -10,6 +10,12 @@ body {
   padding: 0;
 }
 
+.valid_section {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
 label {
   display: none;
 }
