@@ -129,14 +129,20 @@
 
       <section class="form_section" id="contact">
         <h2 tabindex="0">Cantact me</h2>
-        <p tabindex="0">If you have an application you are interested in developing, a feature that you need built or a project that needs
-          coding. I’d love to help with it</p>
+        <!-- <p tabindex="0">If you have an application you are interested in developing, a feature that you need built or a project that needs
+          coding. I’d love to help with it</p> -->
+          <p class="form_section_p" tabindex="0">If you have an application you are interested in developing, a feature that you need built or a project that needs
+            coding. I’d love to help with it</p>
         <form tabindex="0" class="form_submit" action="https://formspree.io/f/xyyawdao" method="post">
           <input class="input_element" name="name" placeholder="Full name" type="text" required maxlength="30">
           <input class="input_element" type="email" name="email" placeholder="Email adress" required>
           <textarea class="text_elemnt" name="message" placeholder="Write your message" id="" cols="30" rows="10" required
             maxlength="500"></textarea>
-          <button type="submit" class="btn_details submit_btn">Get in touch</button>
+          <!-- <button type="submit" class="btn_details submit_btn">Get in touch</button> -->
+          <div class="valid_section">
+            <button type="submit" id="btn_submit" class="btn_details submit_btn">Get in touch</button>
+            <p class="validation_message" id="validate_el"></p>
+          </div>
         </form>
         <hr class="bottom_line">
       </section>
