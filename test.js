@@ -7,6 +7,9 @@ const workSection = document.getElementById('work');
 const message = document.getElementById('validate_el');
 const mail = document.getElementById('email');
 const formSubmit = document.querySelector('.form_submit');
+const inputEmail = document.getElementById('email');
+const inputName = document.getElementById('name');
+const inputTextArea = document.getElementById('message');
 let btnModal;
 let span;
 const projects = [
@@ -175,3 +178,23 @@ formSubmit.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+formSubmit.addEventListener('input', () => {
+  const formData = {
+    name: inputName.value,
+    email: inputEmail.value,
+    message: inputTextArea.value,
+  };
+
+  localStorage.setItem('contactForm', JSON.stringify(formData));
+});
+
+function loadData() {
+  const formObj = JSON.parse(localStorage.getItem('contactForm'));
+  if (formObj) {
+    inputName.value = formObj.name;
+    inputEmail.value = formObj.email;
+    inputTextArea.value = formObj.message;
+  }
+}
+displayCard();
+loadData();
