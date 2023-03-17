@@ -70,22 +70,6 @@ const projects = [
     textClass: 'second_reverse',
   },
 ];
-
-function toggleMenu() {
-  if (menu.classList.contains('showMenu')) {
-    menu.classList.remove('showMenu');
-    closeIcon.style.display = 'none';
-    menuIcon.style.display = 'block';
-    hamburger.classList.remove('closingIcon');
-    document.body.classList.remove('hide_y_scroll');
-  } else {
-    menu.classList.add('showMenu');
-    closeIcon.style.display = 'block';
-    menuIcon.style.display = 'none';
-    hamburger.classList.add('closingIcon');
-    document.body.classList.add('hide_y_scroll');
-  }
-}
 function displayCard() {
   let allCards = '';
   projects.forEach((project) => {
@@ -142,7 +126,85 @@ function displayCard() {
         </div>
       </div>
       </div>
-    </div>`;
+    </div`;
+
+  });
+  document.getElementById('cards').innerHTML = allCards;
+}
+
+
+// function toggleMenu() {
+//   if (menu.classList.contains('showMenu')) {
+//     menu.classList.remove('showMenu');
+//     closeIcon.style.display = 'none';
+//     menuIcon.style.display = 'block';
+//     hamburger.classList.remove('closingIcon');
+//     document.body.classList.remove('hide_y_scroll');
+//   } else {
+//     menu.classList.add('showMenu');
+//     closeIcon.style.display = 'block';
+//     menuIcon.style.display = 'none';
+//     hamburger.classList.add('closingIcon');
+//     document.body.classList.add('hide_y_scroll');
+//   }
+// }
+// function displayCard() {
+//   let allCards = '';
+//   projects.forEach((project) => {
+//     let techlist = '';
+//     for (let j = 0; j < project.technologies.length; j += 1) {
+//       techlist = `${techlist}<li class="project_tag">${project.technologies[j]}</li>`;
+//     }
+//     allCards = `${allCards}
+//     <div class="${project.classes}" tabindex="0">
+//       <img class="${project.imgClass}" tabindex="0" src="${project.image}" srcset="">
+//       <div class="${project.textClass} text_side" tabindex="0">
+//       <h2 tabindex="0">${project.name}</h2>
+//       <div class="title">
+//         <h5 tabindex="0">${project.skills.campany}</h5>
+//         <ul class="title_list">
+//           <li tabindex="0">${project.skills.stack}</li>
+//           <li tabindex="0">${project.skills.year}</li>
+//         </ul>
+//       </div>
+//       <p tabindex="0">${project.description}</p>
+//             <ul class="tech_list">
+//             ${techlist}
+//             </ul>
+//     <button class="btn_details btn_modal">See Project</button>
+//           <div id="myModal" class="modal">
+//         <div class="modal-content">
+//           <span class="closeModal" id="closeModal">&times;</span>
+//           <div class="text_side modal_head" tabindex="0">
+//             <h2 tabindex="0">${project.name}</h2>
+//             <div class="title">
+//               <h5 tabindex="0">${project.skills.campany}</h5>
+//               <ul class="title_list">
+//                 <li tabindex="0">${project.skills.stack}</li>
+//                 <li tabindex="0">${project.skills.year}</li>
+//               </ul>
+//             </div>
+//           </div>
+//           <img class="" tabindex="0" src="${project.image}" srcset="">
+//           <div class="details">
+//             <div class="leftSide">
+//               <p>${project.para}</p>
+//             </div>
+//             <div class="rightSide">
+//                 <ul class="tech_list_modal tech_list">
+//                     ${techlist}
+//                 </ul>
+//                 <hr class="divider">
+//                 <div class="btn_links">
+//                   <button class="btn_details btn_modal"><a href="${project.livelink}" class="modal_link" target="_blank">See live</a><img class="" tabindex="0" src="./images/see_live_btn.png" srcset=""></button>
+//                   <button class="btn_details btn_modal"><a href="${project.sourcelink}" class="modal_link" target="_blank">See Source</a><img class="" tabindex="0" src="./images/see_source_btn.png" srcset=""></button>
+//                 </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//       </div>
+//     </div>`;
   });
   workSection.innerHTML = allCards;
   span = document.querySelectorAll('.closeModal');
