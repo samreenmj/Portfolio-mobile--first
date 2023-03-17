@@ -7,6 +7,9 @@ const workSection = document.getElementById('work');
 const message = document.getElementById('validate_el');
 const mail = document.getElementById('email');
 const formSubmit = document.querySelector('.form_submit');
+const inputEmail = document.getElementById('email');
+const inputName = document.getElementById('name');
+const inputTextArea = document.getElementById('message');
 let btnModal;
 let span;
 const projects = [
