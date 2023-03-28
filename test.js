@@ -109,7 +109,7 @@ function displayCard() {
             <ul class="tech_list">
             ${techlist}
             </ul>
-    <button class="btn_details btn_modal">See Project</button>
+    <button class="button-details btn_modal">See Project</button>
           <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="closeModal" id="closeModal">&times;</span>
@@ -134,8 +134,8 @@ function displayCard() {
                 </ul>
                 <hr class="divider">
                 <div class="btn_links">
-                  <button class="btn_details btn_modal"><a href="${project.livelink}" class="modal_link" target="_blank">See live</a><img class="" tabindex="0" src="./images/see_live_btn.png" srcset=""></button>
-                  <button class="btn_details btn_modal"><a href="${project.sourcelink}" class="modal_link" target="_blank">See Source</a><img class="" tabindex="0" src="./images/see_source_btn.png" srcset=""></button>
+                  <button class="button-details btn_modal"><a href="${project.livelink}" class="modal_link" target="_blank">See live</a><img class="" tabindex="0" src="./images/see_live_btn.png" srcset=""></button>
+                  <button class="button-details btn_modal"><a href="${project.sourcelink}" class="modal_link" target="_blank">See Source</a><img class="" tabindex="0" src="./images/see_source_btn.png" srcset=""></button>
                 </div>
             </div>
           </div>

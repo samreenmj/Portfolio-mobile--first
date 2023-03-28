@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -16,35 +16,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <title>Samreen Mujtaba</title>
+  <header tabindex="0">
+    <a href="/">SAMREEN</a>
+    <nav class="mobile-navbar">
+        <button class="hamburger">menu
+          <i class="xmark-close">
+          </i>
+          <i class="bars-open"></i>
+        </button>
+      <ul class="menu_list">
+          <div class="bottom_bar">
+            <hr class="middle_bar"> 
+          </div>
+        <li><a class="link_item" href="#work">Portfolio</a></li>
+        <li><a class="link_item" href="#about">About</a></li>
+        <li><a class="link_item" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="desktop_nav">
+      <ul>
+        <li><a href="#work">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 </head>
 <body>
-    <header tabindex="0">
-      <a href="/">SAMREEN</a>
-      <nav class="mobile_nav">
-          <button class="hamburger">menu
-            <i class="fa-sharp fa-solid fa-xmark close">
-            </i>
-            <i class="fa-solid fa-bars open"></i>
-          </button>
-        <ul class="menu_list">
-            <div class="bottom_bar">
-              <hr class="middle_bar"> 
-            </div>
-          <li><a class="link_item" href="#work">Portfolio</a></li>
-          <li><a class="link_item" href="#about">About</a></li>
-          <li><a class="link_item" href="#contact">Contact</a></li>
-          </ul>
-      </nav>
-      <nav class="desktop_nav">
-        <ul>
-          <li><a href="#work">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+   
   <div class="container">
-  <section class="containt" tabindex="0">
+  <section class="contain" tabindex="0">
     <h1 tabindex="0">
       I’m Samreen<br>
       Glad to see you!
@@ -57,11 +58,10 @@
       LET’S CONNECT
     </h5>
     <ul class="medias">
-      <li><a href="#"><i class="fa-brands fa-twitter socialMedia"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-linkedin-in socialMedia"></i></a> </li>
-      <li><a href="#"><i class="fa-solid fa-m socialMedia"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-github socialMedia"></i></a></li>
-      <li><a href="#"><i class="fa-regular fa-hand-peace socialMedia"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-github"></i></a></li>
     </ul>
   </section>
 
@@ -70,10 +70,9 @@
   </section>
   <!-- Work cards acreated Dynamically Ends -->
 
-
   <!-- About Me section start -->
-  <div class="bottom_section">
-      <section class="about_section" tabindex="0" id="about">
+  <div class="bottom-section">
+      <section class="about-sec" tabindex="0" id="about">
         <div>
           <h2 tabindex="0">About<br> Myself</h2>
           <p tabindex="0">
@@ -85,19 +84,18 @@
             LET’S CONNECT
           </h5>
           <ul class="icons">
-            <li><a href="#"><i class="fa-brands fa-github socialMedia"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin-in socialMedia"></i></a> </li>
-            <li><a href="#"><i class="fa-regular fa-hand-peace socialMedia"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-twitter socialMedia"></i></a></li>
-            <li><a href="#"><i class="fa-solid fa-m socialMedia"></i></a></li>
-          </ul>
-          <button class="btn_details">Get my resume</button>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
+          <button class="button-details">Get my resume</button>
         </div>
         <div tabindex="0">
           <ul class="drop_down">
-            <li class="languages_title">
+            <li class="lang-title">
               <h3 tabindex="0">Languages</h3>
-              <i class="fa-sharp fa-solid fa-chevron-down grey_color"></i>
+              <i class="chevron-down grey_color"></i>
             </li>
             <li class="Languages_items"><img src="./images\Ellipse0.png" tabindex="0" class="rounded_icon" alt="JavaScript" srcset="">
               <p>JavaScript</p>
@@ -110,16 +108,16 @@
             </li>
           </ul>
           <ul class="drop_down">
-            <li class="languages_title">
+            <li class="lang-title">
               <h3 tabindex="0">Framworks</h3>
-              <i class="fa-solid fa-chevron-right grey_color"></i>
+              <i class="chevron-right grey_color"></i>
             </li>
           </ul>
           <hr>
           <ul class="drop_down">
-            <li class="languages_title">
+            <li class="lang-title">
               <h3 tabindex="0">Skills</h3>
-              <i class="fa-solid fa-chevron-right grey_color"></i>
+              <i class="chevron-right grey_color"></i>
             </li>
           </ul>
           <hr>
@@ -127,20 +125,20 @@
       </section>
       <!-- About Me section Ends -->
 
-      <section class="form_section" id="contact">
-        <h2 tabindex="0">Cantact me</h2>
+      <section class="form-sec" id="contact">
+        <h2>Cantact me</h2>
         <!-- <p tabindex="0">If you have an application you are interested in developing, a feature that you need built or a project that needs
           coding. I’d love to help with it</p> -->
-          <p class="form_section_p" tabindex="0">If you have an application you are interested in developing, a feature that you need built or a project that needs
+          <p class="form-sec_p" tabindex="0">If you have an application you are interested in developing, a feature that you need built or a project that needs
             coding. I’d love to help with it</p>
         <form tabindex="0" class="form_submit" action="https://formspree.io/f/xyyawdao" method="post">
           <input class="input_element" name="name" placeholder="Full name" type="text" required maxlength="30">
           <input class="input_element" type="email" name="email" placeholder="Email adress" required>
           <textarea class="text_elemnt" name="message" placeholder="Write your message" id="" cols="30" rows="10" required
             maxlength="500"></textarea>
-          <!-- <button type="submit" class="btn_details submit_btn">Get in touch</button> -->
+          <!-- <button type="submit" class="button-details submit_btn">Get in touch</button> -->
           <div class="valid_section">
-            <button type="submit" id="btn_submit" class="btn_details submit_btn">Get in touch</button>
+            <button type="submit" id="btn_submit" class="button-details submit_btn">Get in touch</button>
             <p class="validation_message" id="validate_el"></p>
           </div>
         </form>
